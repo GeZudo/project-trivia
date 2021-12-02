@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/control-has-associated-label */
+/* eslint-disable react/no-danger */
 import PropTypes from 'prop-types';
 import React from 'react';
 
@@ -13,9 +15,8 @@ class Answers extends React.Component {
         disabled={ click }
         name={ answer }
         className={ click ? color : null }
-      >
-        { answer }
-      </button>
+        dangerouslySetInnerHTML={ { __html: answer } }
+      />
     );
   }
 }

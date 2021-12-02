@@ -1,3 +1,4 @@
+/* eslint-disable react/no-danger */
 import PropTypes from 'prop-types';
 import React from 'react';
 import Answers from './Answers';
@@ -15,7 +16,7 @@ class Question extends React.Component {
             {' '}
             { question.category }
           </h4>
-          <p data-testid="question-text">{ question.question }</p>
+          <p dangerouslySetInnerHTML={ { __html: question.question } } />
         </div>
         <div className="answers">
           { allQuestions.map((element, key) => (
