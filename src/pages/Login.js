@@ -71,22 +71,20 @@ class Login extends Component {
         <div className="login">
           <form>
             <label htmlFor="login">
-              Usuário:
+              { `${'User: '}` }
               <input
                 type="text"
                 name="username"
                 id="login"
                 onChange={ this.handleChange }
-                data-testid="input-player-name"
               />
             </label>
             <label htmlFor="input-gravatar-email" className="email">
-              E-mail:
+              { `${'Email: '}` }
               <input
                 type="email"
                 name="email"
                 onChange={ this.handleChange }
-                data-testid="input-gravatar-email"
               />
             </label>
             <div className="buttons">
@@ -94,19 +92,17 @@ class Login extends Component {
                 type="button"
                 name="disabled"
                 disabled={ disabled }
-                data-testid="btn-play"
                 onClick={ this.handleClick }
               >
-                Jogar
+                Play
               </button>
-              <button
+              {/* <button
                 type="button"
                 name="config"
-                data-testid="btn-settings"
                 onClick={ this.goToConf }
               >
-                Configurações
-              </button>
+                Confs
+              </button> */}
             </div>
           </form>
         </div>

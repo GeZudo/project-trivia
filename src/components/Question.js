@@ -11,7 +11,7 @@ class Question extends React.Component {
     return (
       <div>
         <div>
-          <h4 data-testid="question-category">
+          <h4>
             Category
             {' '}
             { question.category }

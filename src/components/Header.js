@@ -10,15 +10,14 @@ class Header extends React.Component {
       <div className="header">
         <img
           src={ `https://www.gravatar.com/avatar/${md5(email).toString()}` }
-          data-testid="header-profile-picture"
           alt="userAvatar"
         />
         <div className="header-info">
-          <p data-testid="header-player-name">{ username }</p>
-          <p data-testid="header-score" className="points">
-            { score }
+          <p>{ username }</p>
+          <p className="points">
+            Score:
             {' '}
-            Pontos
+            { score }
           </p>
         </div>
       </div>

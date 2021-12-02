@@ -27,7 +27,7 @@ class Ranking extends React.Component {
     });
     return (
       <div className="ranking-main">
-        <div data-testid="ranking-title" className="ranking-title">
+        <div className="ranking-title">
           <h1>Ranking</h1>
         </div>
         <div className="ranking-list">
@@ -39,21 +39,19 @@ class Ranking extends React.Component {
               </p>
               <img src={ picture } alt={ name } />
               <p
-                data-testid={ `player-name-${index}` }
                 className="ranking-name"
               >
                 { name }
               </p>
-              <p data-testid={ `player-score-${index}` }>{ score }</p>
+              <p>{ score }</p>
             </div>
           )) }
         </div>
         <button
           type="button"
-          data-testid="btn-go-home"
           onClick={ this.goHome }
         >
-          Voltar ao inicio
+          Home
 
         </button>
       </div>

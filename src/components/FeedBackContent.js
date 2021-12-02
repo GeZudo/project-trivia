@@ -27,18 +27,18 @@ class FeedBackContent extends React.Component {
     const NUMBER = 3;
     return (
       <>
-        <span data-testid="feedback-text">
-          { assertions < NUMBER ? 'Podia ser melhor...' : 'Mandou bem!'}
+        <span>
+          { assertions < NUMBER ? 'Could be better...' : 'Nice job!'}
         </span>
-        <div data-testid="feedback-total-score">
+        <div>
           { score }
           {' '}
-          Pontos
+          Points
         </div>
-        <div data-testid="feedback-total-question">
+        <div>
           { assertions }
           {' '}
-          Respostas corretas
+          Correct Answers
         </div>
       </>
     );

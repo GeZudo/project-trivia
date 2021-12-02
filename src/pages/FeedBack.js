@@ -25,24 +25,22 @@ class FeedBack extends React.Component {
 
   render() {
     return (
-      <div data-testid="feedback-text">
+      <div>
         <Header />
         <div className="feedback">
           <FeedBackContent />
           <div className="feedback-buttons">
             <button
-              data-testid="btn-play-again"
               type="button"
               onClick={ this.playAgain }
             >
-              Jogar novamente
+              Play Again
             </button>
             <button
-              data-testid="btn-ranking"
               type="button"
               onClick={ this.ranking }
             >
-              Ver Ranking
+              Ranking
             </button>
           </div>
         </div>

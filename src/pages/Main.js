@@ -133,9 +133,8 @@ class Main extends React.Component {
               onClick={ this.nextQuestion }
               hidden={ !click }
               type="button"
-              data-testid="btn-next"
             >
-              Próxima
+              Next
             </button>
           </div>
         </div>
