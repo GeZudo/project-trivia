@@ -23,7 +23,7 @@ Pojeto proposto pelo curso da [Trybe](https://betrybe.com) em que deveria ser cr
 
 ## Deploy
 
-<http://trivia.augustoalves.dev/>
+<https://trivia.augustoalves.dev/>
 
 
 ## Rodando localmente
